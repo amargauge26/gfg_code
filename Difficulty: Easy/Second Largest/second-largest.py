@@ -1,14 +1,15 @@
 #User function Template for python3
 class Solution:
     def getSecondLargest(self, arr):
-        if len(arr)<=1:
-            return -1
         arr.sort()
         n = len(arr)
-        for i in range(n-2,-1,-1):
-            if arr[i]<arr[i+1]:
+        i = n-2
+        while i>=0:
+            if arr[i]==arr[i+1]:
+                i-=1
+            
+            else:
                 return arr[i]
-                break
         
         return -1
 
