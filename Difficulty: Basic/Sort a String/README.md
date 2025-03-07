@@ -1,4 +1,4 @@
-<h2><a href="https://www.geeksforgeeks.org/problems/sort-a-string2943/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card">Sort a String</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a string consisting of lowercase letters, arrange all its letters in ascending order.&nbsp;</span></p>
+<h2><a href="https://www.geeksforgeeks.org/problems/sort-a-string2943/1">Sort a String</a></h2><h3>Difficulty Level : Difficulty: Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given a string consisting of lowercase letters, arrange all its letters in ascending order.&nbsp;</span></p>
 
 <p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
