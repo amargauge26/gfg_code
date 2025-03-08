@@ -1,38 +1,27 @@
 #User function Template for python3
-
 import math
-
 class Solution:
-    def count3DivNums(self, l, r):
-        # Helper function to find all primes up to sqrt(r) using Sieve of Eratosthenes
-        def sieve(limit):
-            primes = []
-            is_prime = [True] * (limit + 1)
-            is_prime[0] = is_prime[1] = False  # 0 and 1 are not primes
-            for num in range(2, limit + 1):
-                if is_prime[num]:
-                    primes.append(num)
-                    for multiple in range(num * num, limit + 1, num):
-                        is_prime[multiple] = False
-            return primes
+    def count3DivNums(self, L, R):
+        # code here 
+        maxl = int(math.sqrt(R)+1)
+        is_prime = [True]*(maxl+1)
+        is_prime[0]=False
+        is_prime[1]=False
         
-        # Find primes up to sqrt(r)
-        sqrt_r = int(math.sqrt(r))
-        primes = sieve(sqrt_r)
+        for i in range(2,int(math.sqrt(maxl) +1)):
+            if is_prime[i]:
+                for j in range(i*i,maxl+1,i):
+                    is_prime[j]=False
         
-        count = 0
+        count=0
         
-        # For each prime, check if its square lies within [l, r]
-        for prime in primes:
-            prime_square = prime * prime
-            if l <= prime_square <= r:
-                count += 1
+        for i in range(2,maxl+1):
+            if is_prime[i]:
+                s=i*i
+                if L<=s<=R:
+                    count+=1
         
         return count
-
-        return c
-                    
-            
 
 
 #{ 
